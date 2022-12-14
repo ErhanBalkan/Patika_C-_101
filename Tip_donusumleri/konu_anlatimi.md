@@ -10,10 +10,12 @@ Tip dönüşümleri 2 şekilde yapılabilir:
 
 ## Implicit Conversion 
 Bir değişkenin kendinden daha yüksek kapasiteli bir değişkene atanmasıdır. Hedef değişkenin veri tipi bellekte yeterli alana sahip olacağından, bu dönüşümde bir veri kaybı söz konusu olmayacaktır. Dolayısıyla bu dönüşüm kendiliğinden yapılabilir.
+```
 Örnek;
-``` float a; int b = 25; a = b; ```
+float a; int b = 25; a = b;
 Örnek;
-``` short x = 10; int y; y = x; ```
+short x = 10; int y; y = x;
+```
 
 Yukarıdaki örnek sorunsuz çalışır. Çünkü float integer'a, integer da short veri tipine göre daha büyük sayıları saklayabiliyor.
 
