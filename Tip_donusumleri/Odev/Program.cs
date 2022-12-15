@@ -24,8 +24,8 @@ byte v = (byte)w;
 
 int xx = 6;
 string yy = xx.ToString();
-
-string zz = 12.5f.ToString();
+float f1 = 12.5f;
+string zz = f1.ToString();
 // -----------------------------
 // System.Convert
 string s1 = "10", s2 = "20";
