@@ -28,3 +28,39 @@ foreach (var sayi in sayiDizisi)
     toplam += sayi;
 
 Console.WriteLine("Ortalama: " + toplam / diziUzunlugu);
+
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// ----------------------------------------------------------------
+// Array sınıfı methodları
+int[] sayilar = {23,12,4,86,72,3,11,17};
+Console.WriteLine("*** Sırasız dizi ***");
+foreach (var sayi in sayilar)
+    System.Console.WriteLine(sayi);
+// ----------------------------------------------------------------
+System.Console.WriteLine("*** Sıralı Dizi ***");
+Array.Sort(sayilar);
+foreach (var sayi in sayilar)
+    System.Console.WriteLine(sayi);
+// ----------------------------------------------------------------
+System.Console.WriteLine("*** Clear ***");
+Array.Clear(sayilar,2,2);
+// sayilar dizisinde 2. indexten itibaren 2 elemanı SIFIRLAR.
+foreach (var sayi in sayilar)
+    System.Console.WriteLine(sayi);
+// ----------------------------------------------------------------
+System.Console.WriteLine("*** Reverse ***");
+Array.Reverse(sayilar);
+foreach (var sayi in sayilar)
+    System.Console.WriteLine(sayi);
+// ----------------------------------------------------------------
+System.Console.WriteLine("*** IndexOf ***");
+System.Console.WriteLine(Array.IndexOf(sayilar,23));
+// ----------------------------------------------------------------
+System.Console.WriteLine("*** Resize ***");
+Array.Resize<int>(ref sayilar, 9);
+sayilar[8] = 99;
+foreach (var sayi in sayilar)
+    System.Console.WriteLine(sayi);
