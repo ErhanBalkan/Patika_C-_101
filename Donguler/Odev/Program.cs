@@ -40,3 +40,36 @@ for (int i = 1; i < 10; i++)
         continue;
     Console.WriteLine(i);
 }
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+Console.WriteLine("--------------- While ---------------");
+// 1'den başlayarak konsoldan girilen sayıya kadar(sayı dahil) ortalama hesaplayıp yazdır.
+Console.Write("Lütfen bir sayı giriniz: ");
+int sayi = int.Parse(Console.ReadLine());
+int sayac2 = 1;
+int toplam = 0;
+while (sayac2 <= sayi)
+{
+    toplam += sayac;
+    sayac2++;
+}
+Console.WriteLine("Ortalama: " + toplam / sayi);
+
+// a'dan z'ye kadar tüm harfleri yazdır.
+char character = 'a';
+while (character <= 'z')
+{
+    Console.Write(character);
+    character++;
+}
+Console.WriteLine();
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------
+Console.WriteLine("--------------- ForEach ---------------");
+string[] arabalar = {"BMW", "Ford", "Toyota", "Nissan"};
+foreach (string araba in arabalar)
+{
+    Console.WriteLine(araba);
+}
