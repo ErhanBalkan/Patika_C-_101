@@ -30,7 +30,12 @@ Değer Tipleri şu şekildedir;
 int, long, float, double, decimal, char, bool, byte, short, struct, enum
 ```
 ```
-Referans olarak bir atama yapıldığında ise fonksiyona ilgili değişkenin bellekteki adresi gönderilmiş gibi düşünebilirsiniz. Dolayısıyla fonksiyon asıl değişken üzerinde değişiklik yapar. Fonksiyon içerisinde bir değişiklik yapıldığında çağırıldığı yerdeki değişken de değişikliğe uğramış olur. Yani değeri değişir. Bu nedenle ref anahtar kelimesini kullanırken çok dikkatli olunmalıdır.
+Referans olarak bir atama yapıldığında ise fonksiyona ilgili 
+değişkenin bellekteki adresi gönderilmiş gibi düşünebilirsiniz. 
+Dolayısıyla fonksiyon asıl değişken üzerinde değişiklik yapar. 
+Fonksiyon içerisinde bir değişiklik yapıldığında çağırıldığı yerdeki 
+değişken de değişikliğe uğramış olur. Yani değeri değişir. 
+Bu nedenle ref anahtar kelimesini kullanırken çok dikkatli olunmalıdır.
 ```
 ### Ref Kullanımının Özellikleri
 * Referans olarak iletilmek istenen değişkenin önüne "ref" yazılmalıdır.
