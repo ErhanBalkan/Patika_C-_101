@@ -1,4 +1,5 @@
-# Metot Nedir ?
+# Metotlar
+## Metot Nedir ?
 Metotları programı küçük parçalara ayrıştırmak için kullanırız. Büyük bir işi tek bir metot içinde yazmak yerine küçük parçalara ayırarak yazmak daha doğru bir yaklaşımdır.
 
 Bu bizi hem kod tekrarından kurtarır hem de daha okunabilir kod parçaları yazmamızı sağlar. Metotlar tek başlarına kullanılabilen yapılar değildir. Bir sınıf içerisinde yazılmalı ve ancak sınıfın nesnesi aracılığıyla erişilebilir olmalıdır. (Static sınıf metodlarına sinifAdi.metotIsmi şeklinde erişilebilir.)
@@ -13,7 +14,7 @@ erişim_belirteci geri_donus_tipi metot_adi(argüman/parametre)
 
 Metotlat içerisinde tanımlanan değişkenler sadece metot içerisinden erişilebilirler. Programından başından sonuna kadar yaşamazlar. Metottan çıkıldığından lifetime ı yani yaşam süresi sona erer.
 
-# Ref Kullanımı
+## Ref Kullanımı
 Bir fonksiyona parametre aktarırken değer veya referans tipinde parametre verebiliriz.
 ```
 Değer tipleri metoda bit bit kopyalanır. 
@@ -54,4 +55,46 @@ public int ArttırVeTopla (ref int x, ref int y)
     return (x+y);
 }
 ```
+## Metot Overloading ve Out Parametre Kullanımı
+### Metot Overloading Nedir?
+Method overloading yani metotların aşırı yüklenmesi metot imzasının değiştirilerek aynı isimdeki metodun birden farklı versiyonun yaratılmasıdır.
+Örnek :
+```
+public void EkranaYazdir(int deger)
+{
+    Console.WriteLine(deger);
+}
 
+public void EkranaYazdir(string deger)
+{
+    Console.WriteLine(deger);
+}
+
+public void EkranaYazdir(string deger1,string deger2)
+{
+    Console.WriteLine(deger1 + deger2);
+}
+```
+Yukarıda EkranaYazdir isimli metodun 3 overload versiyonunu görüyoruz. Parametre sayısı ve parametre veri tiplerini değiştirerek aşırı yüklemiş olduk.
+```
+ÖNEMLİ : Geri dönüş tipi metot imzasına dahil değildir. Yani sadece geri dönüş tipini değiştirerek bir metodu aşırı yükleyemeyiz. Derleyici hata verecektir.
+```
+
+### Out Parametre Kullanımı
+Out anahtar kelimesi ref anahtar kelimesi ile aynı işi yapıyor diyebiliriz. Arada sadece birkaç fark var.
+
+Out Kullanımının Özellikleri:
+* Out olarak kullanılmak istenen değişken önüne mutlaka "out" yazılmalıdır.
+* out değişkeninin bir ilk değeri olmak zorunda değildir. Hatırlarsanız bu ref kullanırken zorunluydu.
+
+Örnek out kullanımı:
+
+```
+instance.Toplam(4,8, out int toplam);
+
+public int Toplam (int a, int b,  out int toplam)
+{
+    toplam = a+b;
+    return toplam;
+}
+```
