@@ -16,7 +16,13 @@ Metotlat içerisinde tanımlanan değişkenler sadece metot içerisinden erişil
 # Ref Kullanımı
 Bir fonksiyona parametre aktarırken değer veya referans tipinde parametre verebiliriz.
 ```
-Değer tipleri metoda bit bit kopyalanır. Yani int bir değişkeni parametre olarak değer tipinde bir fonksiyona verdiğimizde; fonksiyon çalışırken bellekten integer bir değişkeni saklayabilecek kadar yer ayrılır ve gönderilen parametre orada saklanır Fonksiyon içerisinde parametre üzerinde değişiklik yapıldığında ana değişken değişmez. Sadece kopyası üzerinde değişiklik yapılmış olur. Fonksiyon sonlandığındaysa bellekten silinir. Yani yaşam süresi sona erer.
+Değer tipleri metoda bit bit kopyalanır. 
+Yani int bir değişkeni parametre olarak değer tipinde bir fonksiyona verdiğimizde; 
+fonksiyon çalışırken bellekten integer bir değişkeni saklayabilecek kadar
+yer ayrılır ve gönderilen parametre orada saklanır Fonksiyon içerisinde
+parametre üzerinde değişiklik yapıldığında ana değişken değişmez. 
+Sadece kopyası üzerinde değişiklik yapılmış olur. 
+Fonksiyon sonlandığındaysa bellekten silinir. Yani yaşam süresi sona erer.
 ```
 
 Değer Tipleri şu şekildedir; 
