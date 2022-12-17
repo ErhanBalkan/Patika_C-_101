@@ -10,6 +10,20 @@ ornek.EkranaYazdir("Merhaba");
 ornek.EkranaYazdir((3+5).ToString());
 int a = ornek.ArttırVeTopla(2,2);
 System.Console.WriteLine(a);
+
+System.Console.WriteLine("***** Recursive metotlar *****");
+// RECURSİVE METOTLAR
+int FibonacciSerisi(int sayi)
+{  
+    if (sayi==0)
+        return 0;
+    else if (sayi==1)
+        return 1;
+    else
+        return FibonacciSerisi(sayi-1)+FibonacciSerisi(sayi-2);
+}
+
+System.Console.WriteLine(FibonacciSerisi(3));
 class Metotlar
 {
     public void EkranaYazdir(string data){
