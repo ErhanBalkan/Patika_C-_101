@@ -162,3 +162,31 @@ Normal metotlar gibi kurucu metotları da static olarak tanımlayabiliriz. Sın�
 Metotlar ve özellikler gibi sınıflar da static anahtar kelimesi ile oluşturulabilirler. Yukarıdaki örnekte de görebileceğiniz üzere normal sınıflar içerisinde static metotlar ve üyeler kullanabiliriz. Peki o halde neden sınıfları static yapma ihtiyacımız olsun? Buna okunabilirliği arttırmak için diyebiliriz.
 
 Bir sınıfın tüm üyeleri static ise sınıfı da static yapmak kullanımı kolaylaştıran bir yaklaşım olur.
+
+---
+---
+--- 
+---
+---
+
+# Enum
+Uygulama geliştirirken sabit değerlerle çalışmak durumunda kalırız. Bu noktalarda okunabilirliği yüksek bir program yazmak istiyorsak enum'lardan faydalanırız.
+
+"enum" anahtar kelimesi enumeration yani numaralandırma kelimesinden gelir. Sayısal verilerı string ifadelerle saklamanızı sağlar. Okunabilirliğe katkısı da tam olarak burdan gelir diyebiliriz.
+
+```
+enum Gunler 
+{
+    Pazartesi, 
+    Sali, 
+    Carsamba, 
+    Persembe, 
+    Cuma, 
+    Cumartesi, 
+    Pazar
+};
+```
+
+Yukarıda Gunler enum'ını görüyorsunuz. Enum lar default olarak 1'den başlar.
+
+`Gunler.Pazartesi` ifadesi ile Pazartesi'nin string ifadesine erişebiliriz. Eğer Pazartesinin 1. gün oldugu bilgisine ihtiyacımız varsa o da şu şekildedir: `(int)Gunler.Pazartesi`

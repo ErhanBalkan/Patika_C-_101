@@ -53,3 +53,19 @@ dikdortgen_Struct1.KisaKenar = 3;
 dikdortgen_Struct1.UzunKenar = 4;
 
 System.Console.WriteLine($"Struct alan hesabı: {dikdortgen_Struct1.AlanHesapla()}");
+
+// ----------------------------------------------------------------
+System.Console.WriteLine("-----------------------------------------");
+
+
+System.Console.WriteLine(Gunler.Cuma);
+enum Gunler{
+    Pazartesi,
+    Salı,
+    Çarşamba,
+    Perşembe,
+    Cuma,
+    Cumartesi,
+    Pazar
+}
+
