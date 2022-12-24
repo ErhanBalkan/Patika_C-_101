@@ -22,7 +22,6 @@ class SinifAdi
 ## Erişim Belirleyiciler
 Erişim belirleyiciler önüne geldiği öğenin projenin nerelerinden erişilebileceğini belirler. Öğeleri korur gibi düşünebilirsiniz.
 
-```
 1. Public : Her yerden erişilebilir.
 
 2. Private : Sadece tanımlandığı sınıf içerisinden erişilebilir.
@@ -30,4 +29,3 @@ Erişim belirleyiciler önüne geldiği öğenin projenin nerelerinden erişileb
 3. Internal : Sadece bulunduğu proje içerisinden erişilebilir
 
 4. Protected : Sadece tanımlandığı sınıfta ya da o sınıfı miras alan sınıflardan erişilebilir.
-```
