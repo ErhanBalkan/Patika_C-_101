@@ -21,3 +21,18 @@ Calisan calisan3 = new Calisan{
 };
 
 calisan3.CalisanBilgileri();
+
+// ----------------------------------------------------------------
+System.Console.WriteLine("-----------------------------------------");
+
+Ogrenci ogrenci1 = new Ogrenci();
+ogrenci1.Ad = "Ali";
+ogrenci1.Soyad = "Veli";
+ogrenci1.No = 555;
+ogrenci1.SinifNo = 3;
+
+ogrenci1.OgrenciBilgileriniGetir();
+
+ogrenci1.SinifAtlat();
+
+ogrenci1.OgrenciBilgileriniGetir();
