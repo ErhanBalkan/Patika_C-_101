@@ -39,4 +39,17 @@ ogrenci1.SinifAtlat();
 
 ogrenci1.OgrenciBilgileriniGetir();
 
+// ----------------------------------------------------------------
+System.Console.WriteLine("-----------------------------------------");
 
+Dikdortgen dikdortgen1 = new Dikdortgen();
+dikdortgen1.KisaKenar = 3;
+dikdortgen1.UzunKenar = 4;
+
+System.Console.WriteLine($"Class alan hesabı: {dikdortgen1.AlanHesapla()}");
+
+Dikdortgen_struct dikdortgen_Struct1;
+dikdortgen_Struct1.KisaKenar = 3;
+dikdortgen_Struct1.UzunKenar = 4;
+
+System.Console.WriteLine($"Struct alan hesabı: {dikdortgen_Struct1.AlanHesapla()}");
