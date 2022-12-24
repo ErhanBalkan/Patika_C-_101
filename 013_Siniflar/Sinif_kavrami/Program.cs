@@ -22,6 +22,8 @@ Calisan calisan3 = new Calisan{
 
 calisan3.CalisanBilgileri();
 
+Calisan.CalisanSayisiniGetir();
+
 // ----------------------------------------------------------------
 System.Console.WriteLine("-----------------------------------------");
 
@@ -36,3 +38,5 @@ ogrenci1.OgrenciBilgileriniGetir();
 ogrenci1.SinifAtlat();
 
 ogrenci1.OgrenciBilgileriniGetir();
+
+
