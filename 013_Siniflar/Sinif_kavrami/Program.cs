@@ -68,4 +68,3 @@ enum Gunler{
     Cumartesi,
     Pazar
 }
-
