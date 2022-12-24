@@ -1,2 +1,2 @@
-# Patika_C-_101
+# Patika_CSharp_101
 Patika üzerindeki C# 101 eğitimi
